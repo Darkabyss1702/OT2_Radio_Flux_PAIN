@@ -29,7 +29,7 @@ flux_fit = polynomial_fit(frequencies_fit)
 a,b, c, d,e, f = polynomial_coefficients
 
 expected_flux = polynomial_fit(frequencies_source)
-observed_flux = np.array(flux_densities_source5)
+observed_flux = np.array(Flux[source-1])
 chi_squared = np.sum((observed_flux - expected_flux) ** 2)
 
 n_data_points = len(frequencies_source)
